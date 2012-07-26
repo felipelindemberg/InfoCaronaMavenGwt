@@ -1,0 +1,36 @@
+<linked-list>
+  <ufcg.si1.infoCarona.model.usuario.Usuario>
+    <listaDeCaronas class="linked-list"/>
+    <listaDeSolicitacaoDeVagas class="linked-list"/>
+    <Reviews class="linked-list"/>
+    <listaDeInteresses class="linked-list"/>
+    <listaDeMensagens class="linked-list"/>
+    <usuariosPreferenciais class="linked-list"/>
+    <caronasSeguras>0</caronasSeguras>
+    <caronaNaoFuncionaram>0</caronaNaoFuncionaram>
+    <faltasEmVagas>0</faltasEmVagas>
+    <presencaEmVagas>0</presencaEmVagas>
+    <nome>c</nome>
+    <email>c</email>
+    <endereco>c</endereco>
+    <senha>c</senha>
+    <login>c</login>
+  </ufcg.si1.infoCarona.model.usuario.Usuario>
+  <ufcg.si1.infoCarona.model.usuario.Usuario>
+    <listaDeCaronas class="linked-list"/>
+    <listaDeSolicitacaoDeVagas class="linked-list"/>
+    <Reviews class="linked-list"/>
+    <listaDeInteresses class="linked-list"/>
+    <listaDeMensagens class="linked-list"/>
+    <usuariosPreferenciais class="linked-list"/>
+    <caronasSeguras>0</caronasSeguras>
+    <caronaNaoFuncionaram>0</caronaNaoFuncionaram>
+    <faltasEmVagas>0</faltasEmVagas>
+    <presencaEmVagas>0</presencaEmVagas>
+    <nome>k</nome>
+    <email>k</email>
+    <endereco>k</endereco>
+    <senha>k</senha>
+    <login>k</login>
+  </ufcg.si1.infoCarona.model.usuario.Usuario>
+</linked-list>

@@ -1,6 +1,3 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+/target
+.DS_Store
+/grupo3si.sigabemcaroneiro.launch

@@ -1,0 +1,246 @@
+<linked-list>
+  <ufcg.si1.infoCarona.model.usuario.Usuario>
+    <listaDeCaronas class="linked-list">
+      <ufcg.si1.infoCarona.model.carona.CaronaComum>
+        <origem>Campina grande</origem>
+        <destino>Joao Pessoa</destino>
+        <idCarona>00001</idCarona>
+        <calendar>
+          <time>1387809015390</time>
+          <timezone>America/Sao_Paulo</timezone>
+        </calendar>
+        <vagas>3</vagas>
+        <listaDeSugestoes class="linked-list">
+          <ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro>
+            <idSugestao>00010</idSugestao>
+            <listaDeSugestaoDePontosDeEncontro class="linked-list">
+              <string>UFCG</string>
+              <string>Centro</string>
+              <string>Liberdade</string>
+            </listaDeSugestaoDePontosDeEncontro>
+            <listaDeRespostasDePontosDeEncontro class="linked-list">
+              <string>UFCG</string>
+              <string>Centro</string>
+            </listaDeRespostasDePontosDeEncontro>
+            <usuarioQueSugeriu>
+              <listaDeCaronas class="linked-list">
+                <ufcg.si1.infoCarona.model.carona.CaronaComum>
+                  <origem>Caruaru</origem>
+                  <destino>Campina Grande</destino>
+                  <idCarona>00004</idCarona>
+                  <calendar>
+                    <time>1385228415405</time>
+                    <timezone>America/Sao_Paulo</timezone>
+                  </calendar>
+                  <vagas>4</vagas>
+                  <listaDeSugestoes class="linked-list">
+                    <ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro>
+                      <idSugestao>00009</idSugestao>
+                      <listaDeSugestaoDePontosDeEncontro class="linked-list">
+                        <string>Centro</string>
+                        <string>Shopping</string>
+                      </listaDeSugestaoDePontosDeEncontro>
+                      <listaDeRespostasDePontosDeEncontro class="linked-list">
+                        <string>Centro</string>
+                      </listaDeRespostasDePontosDeEncontro>
+                      <usuarioQueSugeriu reference="../../../../../../../../../.."/>
+                    </ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro>
+                  </listaDeSugestoes>
+                  <listaDeSolicitacao class="linked-list">
+                    <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                      <carona class="ufcg.si1.infoCarona.model.carona.CaronaComum" reference="../../.."/>
+                      <donoSolicitacao reference="../../../../../../../../../.."/>
+                      <ponto>Centro</ponto>
+                      <idSolicitacao>00013</idSolicitacao>
+                      <estado>ACEITA</estado>
+                    </ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                  </listaDeSolicitacao>
+                  <listaPontosDeEncontroPermitidos class="linked-list">
+                    <string>Centro</string>
+                  </listaPontosDeEncontroPermitidos>
+                  <reviewsCarona/>
+                  <donoDaCarona reference="../../.."/>
+                  <preferencial>false</preferencial>
+                </ufcg.si1.infoCarona.model.carona.CaronaComum>
+                <ufcg.si1.infoCarona.model.carona.CaronaComum>
+                  <origem>Tangamandapio</origem>
+                  <destino>Terra do Nunca</destino>
+                  <idCarona>00005</idCarona>
+                  <calendar>
+                    <time>1359826215405</time>
+                    <timezone>America/Sao_Paulo</timezone>
+                  </calendar>
+                  <vagas>6</vagas>
+                  <listaDeSugestoes class="linked-list">
+                    <ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro>
+                      <idSugestao>00011</idSugestao>
+                      <listaDeSugestaoDePontosDeEncontro class="linked-list">
+                        <string>abcd</string>
+                        <string>efgh</string>
+                        <string>ijlm</string>
+                      </listaDeSugestaoDePontosDeEncontro>
+                      <listaDeRespostasDePontosDeEncontro class="linked-list">
+                        <string>abcd</string>
+                        <string>ijlm</string>
+                      </listaDeRespostasDePontosDeEncontro>
+                      <usuarioQueSugeriu>
+                        <listaDeCaronas class="linked-list">
+                          <ufcg.si1.infoCarona.model.carona.CaronaComum>
+                            <origem>El Dourado</origem>
+                            <destino>Atlantida</destino>
+                            <idCarona>00007</idCarona>
+                            <calendar>
+                              <time>1381689615405</time>
+                              <timezone>America/Sao_Paulo</timezone>
+                            </calendar>
+                            <vagas>3</vagas>
+                            <listaDeSugestoes class="linked-list"/>
+                            <listaDeSolicitacao class="linked-list"/>
+                            <listaPontosDeEncontroPermitidos class="linked-list"/>
+                            <reviewsCarona/>
+                            <donoDaCarona reference="../../.."/>
+                            <preferencial>false</preferencial>
+                          </ufcg.si1.infoCarona.model.carona.CaronaComum>
+                          <ufcg.si1.infoCarona.model.carona.CaronaComum>
+                            <origem>Girimun</origem>
+                            <destino>Pedra preta</destino>
+                            <idCarona>00008</idCarona>
+                            <calendar>
+                              <time>1368380415405</time>
+                              <timezone>America/Sao_Paulo</timezone>
+                            </calendar>
+                            <vagas>4</vagas>
+                            <listaDeSugestoes class="linked-list"/>
+                            <listaDeSolicitacao class="linked-list"/>
+                            <listaPontosDeEncontroPermitidos class="linked-list"/>
+                            <reviewsCarona/>
+                            <donoDaCarona reference="../../.."/>
+                            <preferencial>false</preferencial>
+                          </ufcg.si1.infoCarona.model.carona.CaronaComum>
+                        </listaDeCaronas>
+                        <listaDeSolicitacaoDeVagas class="linked-list">
+                          <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                            <carona class="ufcg.si1.infoCarona.model.carona.CaronaComum" reference="../../../../../../../../../../.."/>
+                            <donoSolicitacao reference="../../.."/>
+                            <ponto>UFCG</ponto>
+                            <idSolicitacao>00012</idSolicitacao>
+                            <estado>ACEITA</estado>
+                          </ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                          <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                            <carona class="ufcg.si1.infoCarona.model.carona.CaronaComum" reference="../../../../../.."/>
+                            <donoSolicitacao reference="../../.."/>
+                            <ponto>ijlm</ponto>
+                            <idSolicitacao>00016</idSolicitacao>
+                            <estado>PENDENTE</estado>
+                          </ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                        </listaDeSolicitacaoDeVagas>
+                        <Reviews class="linked-list"/>
+                        <listaDeInteresses class="linked-list"/>
+                        <listaDeMensagens class="linked-list"/>
+                        <usuariosPreferenciais class="linked-list"/>
+                        <caronasSeguras>0</caronasSeguras>
+                        <caronaNaoFuncionaram>0</caronaNaoFuncionaram>
+                        <faltasEmVagas>0</faltasEmVagas>
+                        <presencaEmVagas>0</presencaEmVagas>
+                        <nome>felipe</nome>
+                        <email>felipe@gmail</email>
+                        <endereco>rua b</endereco>
+                        <senha>felipe</senha>
+                        <login>felipe</login>
+                      </usuarioQueSugeriu>
+                    </ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro>
+                  </listaDeSugestoes>
+                  <listaDeSolicitacao class="linked-list">
+                    <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                      <carona class="ufcg.si1.infoCarona.model.carona.CaronaComum" reference="../../.."/>
+                      <donoSolicitacao reference="../../../../../../../../../.."/>
+                      <ponto>abcd</ponto>
+                      <idSolicitacao>00015</idSolicitacao>
+                      <estado>PENDENTE</estado>
+                    </ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                    <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga reference="../../listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu/listaDeSolicitacaoDeVagas/ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga[2]"/>
+                  </listaDeSolicitacao>
+                  <listaPontosDeEncontroPermitidos class="linked-list">
+                    <string>abcd</string>
+                    <string>ijlm</string>
+                  </listaPontosDeEncontroPermitidos>
+                  <reviewsCarona/>
+                  <donoDaCarona reference="../../.."/>
+                  <preferencial>false</preferencial>
+                </ufcg.si1.infoCarona.model.carona.CaronaComum>
+              </listaDeCaronas>
+              <listaDeSolicitacaoDeVagas class="linked-list">
+                <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+                  <carona class="ufcg.si1.infoCarona.model.carona.CaronaComum" reference="../../../../../.."/>
+                  <donoSolicitacao reference="../../.."/>
+                  <ponto>Centro</ponto>
+                  <idSolicitacao>00014</idSolicitacao>
+                  <estado>PENDENTE</estado>
+                </ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga>
+              </listaDeSolicitacaoDeVagas>
+              <Reviews class="linked-list"/>
+              <listaDeInteresses class="linked-list"/>
+              <listaDeMensagens class="linked-list"/>
+              <usuariosPreferenciais class="linked-list"/>
+              <caronasSeguras>0</caronasSeguras>
+              <caronaNaoFuncionaram>0</caronaNaoFuncionaram>
+              <faltasEmVagas>0</faltasEmVagas>
+              <presencaEmVagas>0</presencaEmVagas>
+              <nome>gilles</nome>
+              <email>gilles@gmail</email>
+              <endereco>rua a</endereco>
+              <senha>gilles</senha>
+              <login>gilles</login>
+            </usuarioQueSugeriu>
+          </ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro>
+        </listaDeSugestoes>
+        <listaDeSolicitacao class="linked-list">
+          <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga reference="../../listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu/listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum[2]/listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu/listaDeSolicitacaoDeVagas/ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga"/>
+          <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga reference="../../listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu/listaDeSolicitacaoDeVagas/ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga"/>
+        </listaDeSolicitacao>
+        <listaPontosDeEncontroPermitidos class="linked-list">
+          <string>UFCG</string>
+          <string>Centro</string>
+        </listaPontosDeEncontroPermitidos>
+        <reviewsCarona/>
+        <donoDaCarona reference="../../.."/>
+        <preferencial>false</preferencial>
+      </ufcg.si1.infoCarona.model.carona.CaronaComum>
+      <ufcg.si1.infoCarona.model.carona.CaronaComum>
+        <origem>Taquaritinga</origem>
+        <destino>Tangamandapio</destino>
+        <idCarona>00002</idCarona>
+        <calendar>
+          <time>1371055215405</time>
+          <timezone>America/Sao_Paulo</timezone>
+        </calendar>
+        <vagas>3</vagas>
+        <listaDeSugestoes class="linked-list"/>
+        <listaDeSolicitacao class="linked-list"/>
+        <listaPontosDeEncontroPermitidos class="linked-list"/>
+        <reviewsCarona/>
+        <donoDaCarona reference="../../.."/>
+        <preferencial>false</preferencial>
+      </ufcg.si1.infoCarona.model.carona.CaronaComum>
+    </listaDeCaronas>
+    <listaDeSolicitacaoDeVagas class="linked-list">
+      <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga reference="../../listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum/listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu/listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum/listaDeSolicitacao/ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga"/>
+      <ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga reference="../../listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum/listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu/listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum[2]/listaDeSolicitacao/ufcg.si1.infoCarona.model.negociacao.SolicitacaoDeVaga"/>
+    </listaDeSolicitacaoDeVagas>
+    <Reviews class="linked-list"/>
+    <listaDeInteresses class="linked-list"/>
+    <listaDeMensagens class="linked-list"/>
+    <usuariosPreferenciais class="linked-list"/>
+    <caronasSeguras>0</caronasSeguras>
+    <caronaNaoFuncionaram>0</caronaNaoFuncionaram>
+    <faltasEmVagas>0</faltasEmVagas>
+    <presencaEmVagas>0</presencaEmVagas>
+    <nome>italo</nome>
+    <email>italo@gmail</email>
+    <endereco>avenida c</endereco>
+    <senha>italo</senha>
+    <login>italo</login>
+  </ufcg.si1.infoCarona.model.usuario.Usuario>
+  <ufcg.si1.infoCarona.model.usuario.Usuario reference="../ufcg.si1.infoCarona.model.usuario.Usuario/listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum/listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu"/>
+  <ufcg.si1.infoCarona.model.usuario.Usuario reference="../ufcg.si1.infoCarona.model.usuario.Usuario/listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum/listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu/listaDeCaronas/ufcg.si1.infoCarona.model.carona.CaronaComum[2]/listaDeSugestoes/ufcg.si1.infoCarona.model.negociacao.SugestaoDePontoDeEncontro/usuarioQueSugeriu"/>
+</linked-list>

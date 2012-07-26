@@ -1,0 +1,49 @@
+#User Story 17 - Caronas rachadas
+
+#US17 - O sistema deve cadastrar um novo tipo de carona, carona rachada, onde os caroneiros racham a gasolina com o motorista.
+# O sistema deve ser capaz de cadastrar uma carona rachada comum, uma escapada rachada, ou uma municipal rachada.
+
+#Limpar os dados do sistema.
+zerarSistema
+
+#Criar usuário.
+criarUsuario login="mark" senha="m@rk" nome="Mark Zuckerberg" endereco="Palo Alto, California" email="mark@facebook.com"
+criarUsuario login="bill" senha="bilz@o" nome="William Henry Gates III" endereco="Medina, Washington" email="billzin@gmail.com"
+criarUsuario login="vader" senha="d4rth" nome="Anakin Skywalker" endereco="Death Star I" email="darthvader@empire.com"
+
+#Iniciar sessão.
+sessaoMark=abrirSessao login="mark" senha="m@rk"
+
+#Cadastrar caronas.
+carona1ID=cadastrarCaronaRachadaComum idSessao=${sessaoMark} origem="Campina Grande" destino="João Pessoa" data="02/12/2012" hora="12:00" vagas=3 gasolina="50.00"
+carona2ID=cadastrarCaronaRachadaComum idSessao=${sessaoMark} origem="Taquaritinga do Norte" destino="João Pessoa" data="08/12/2012" hora="14:00" vagas=2 gasolina="75.00"
+carona3ID=cadastrarEscapadaRachada idSessao=${sessaoMark} origem="Campina Grande" destino="João Pessoa" dataIda="23/06/2013" dataVolta="26/06/2013" hora="16:00" minimoCaroneiros=3 gasolina="100.00"
+carona4ID=cadastrarEscapadaRachada idSessao=${sessaoMark} origem="Campina Grande" destino="Taquaritinga do Norte" dataIda="23/06/2013" dataVolta="26/06/2013" hora="16:00" minimoCaroneiros=3 gasolina="50.00"
+carona5ID=cadastrarCaronaMunicipalRachada idSessao=${sessaoMark} origem="Centro" destino="UFCG" cidade="Campina Grande" data="04/12/2012" hora="14:00" vagas=4 gasolina="3.00"
+carona6ID=cadastrarCaronaMunicipalRachada idSessao=${sessaoMark} origem="Manaíra Shopping" destino="Parque Solon de Lucena" cidade="João Pessoa" data="04/12/2012" hora="14:00" vagas=3 gasolina="5.00"
+
+expect "Rachada e Comum" getAtributoCarona idCarona=${carona1ID} atributo="tipoDeCarona"
+expect "50.0" getAtributoCarona idCarona=${carona1ID} atributo="gasolina"
+expect "Rachada e Comum" getAtributoCarona idCarona=${carona2ID} atributo="tipoDeCarona"
+expect "Rachada e Escapada" getAtributoCarona idCarona=${carona3ID} atributo="tipoDeCarona"
+expect "100.0" getAtributoCarona idCarona=${carona3ID} atributo="gasolina"
+expect "Rachada e Escapada"  getAtributoCarona idCarona=${carona4ID} atributo="tipoDeCarona"
+expect "Rachada e Municipal"  getAtributoCarona idCarona=${carona5ID} atributo="tipoDeCarona"
+expect "3.0"  getAtributoCarona idCarona=${carona5ID} atributo="gasolina"
+expect "Rachada e Municipal"  getAtributoCarona idCarona=${carona6ID} atributo="tipoDeCarona"
+
+#Iniciar sessão com outro usuário.
+sessaoBill=abrirSessao login="bill" senha="bilz@o"
+
+expect {${carona1ID},${carona3ID}} localizarCaronaRachada idSessao=${sessaoBill} origem="Campina Grande" destino="João Pessoa"
+expect {${carona4ID}} localizarCaronaRachada idSessao=${sessaoBill} Grande" origem="Campina Grande" destino="Taquaritinga do Norte"
+expect {${carona1ID},${carona3ID}} localizarCaronaRachada idSessao=${sessaoMark} origem="Campina Grande" destino="João Pessoa"
+
+#Testa possiveis erros no sistema.
+expectError "Cidade inexistente" localizarCaronaRachada idSessao=${sessaoBill} origem="Tangamandápio" destino="Campina Grande"
+expectError "Cidade inexistente" localizarCaronaRachada idSessao=${sessaoBill} cidade="" origem="Campina Grande" destino="Tangamandápio"
+
+encerrarSistema
+quit
+
+

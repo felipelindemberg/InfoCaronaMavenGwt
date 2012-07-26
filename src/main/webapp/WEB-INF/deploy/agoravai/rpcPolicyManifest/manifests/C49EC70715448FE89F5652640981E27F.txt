@@ -1,0 +1,2 @@
+serviceClass: vai.client.InfoCaronaServer
+path: FF008A1BFBF4B8E4CCE786405C419A16.gwt.rpc
